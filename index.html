@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio for birthday music -->
+    <audio id="birthday-music" loop>
+        <source src="./resources/audio/hbd.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Password Section -->
+    <div id="password-section" class="section">
+        <h1>Enter our Password to Unlock Bubu! (Date Love)</h1>
+        <input type="password" id="password-input" placeholder="Password">
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="error-message" style="color: red; display: none;">Oops! Wrong password. Try again!</p>
+    </div>
+
+    <!-- Container for dynamic content -->
+    <div id="content-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

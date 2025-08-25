@@ -1,0 +1,6 @@
+# Ignore all JPG files
+*.jpg
+*.jpeg
+
+# Or ignore specific directory
+# resources/images/

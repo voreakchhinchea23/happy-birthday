@@ -210,3 +210,17 @@ function createCandleSmoke() {
 
 // Start creating smoke periodically
 setInterval(createCandleSmoke, 800);
+// Add this to your existing script.js file
+
+// Set custom viewport height for mobile devices
+function setVH() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Initialize on load and on resize
+window.addEventListener('load', setVH);
+window.addEventListener('resize', setVH);
+
+// Also add this CSS to your style.css for the vh unit fix:
+// .section { min-height: calc(var(--vh, 1vh) * 80); }
